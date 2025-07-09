@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.scoreboard .attempts-left {
+  font-size: 1rem;
+}
+
+.scoreboard .feedback {
+  font-weight: bold;
+}
+
+.feedback-playing {
+  color: #333;
+}
+
+.feedback-won {
+  color: #28a745;
+}
+
+.feedback-lost {
+  color: #dc3545;
+}
+
+.guess-input {
+  margin-bottom: 20px;
+}
+
+.guess-input form {
+  display: flex;
+}
+
+.guess-input input[type="number"],
+.guess-input input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.guess-input input[type="number"]:focus,
+.guess-input input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.guess-input button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.2s ease;
+}
+
+.guess-input button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.guess-input button:not(:disabled):hover {
+  background-color: #0056b3;
+}
+
+.guess-history {
+  margin-bottom: 20px;
+}
+
+.guess-history ul {
+  list-style: none;
+}
+
+.guess-history li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
